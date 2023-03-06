@@ -144,24 +144,40 @@ body{
     font-size: 1em;
     margin-right: 50%;
 }
+
+
 .warnings{
     width: 300px;
     text-align: center;
     margin: auto;
-    color:#842025;
+    color:#973035;
     padding-top: 20px;
     font-weight: 900;
 }
-.enviado{
+#enviado{
     width: 300px;
     text-align: center;
     margin: auto;
     color:#20843e;
     padding-top: 20px;
+    font-weight: 900;
+}
+.hidden{
+    display: none;
 }
 
 hr{
-    color: #ad5389        ;
+    color: #ad5389;
+}
+.grupo__terminos{
+    color: #3c1053;
+}
+#terminos{
+    text-decoration: none;
+    color:#3c1053;
+}
+#dni{
+    border: 20%;
 }
 
 

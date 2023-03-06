@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
     <header>
         <nav id="barra" class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Maser</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -63,10 +63,42 @@
                     <input id="confirma-contraseña" type="password" placeholder="Confirma contraseña"
                         class="main__input">
 
-                    <input id="dni" type="text" name="dni" placeholder="DNI" maxlength="9" tabindex="4" class="input-2"
-                        onkeypress="return soloLetrasNumeros(event);">
+                    <select name="grupo-sanguineo" class="main__input">
 
-                    <input id="sendbtn" type="submit" value="Registrate" class="main__input main__input--send">
+                        <option>Elige tu grupo sanguineo</option>
+
+                        <option>A+</option>
+
+                        <option>A-</option>
+
+                        <option>O+</option>
+
+                        <option>O-</option>
+
+                        <option>B+</option>
+
+                        <option>B-</option>
+
+                        <option>AB+</option>
+
+                        <option>AB-</option>
+
+                    </select>
+
+                    <input id="dni" type="text" name="dni" placeholder="DNI" maxlength="9" tabindex="4"
+                        class="main__input" onkeypress="return soloLetrasNumeros(event);">
+
+
+                    <input id="sendbtn" type="submit" value="Enviar" class="main__input main__input--send">
+
+                    <div class="grupo__terminos" id="grupo__condiciones">
+                        <label class="formulario__label">
+                            <input class="formulario__chekbox" type="checkbox" name="terminos" id="terms">
+                            Acepto los <a href="#" id="terminos">Términos y condiciones</a>
+                        </label>
+                    </div>
+
+
 
                     <p class="warnings" id="warnings"></p>
                     <p class="enviado" id="enviado"></p>
@@ -77,15 +109,15 @@
                 <article class="main__social">
 
                     <a href="https://www.google.es/" target="blank" class="main__link">
-                        <img src="images/google-icon.svg" class="main__icon">
+                        <img src="images/google-icon.svg" alt="icono google" class="main__icon">
                     </a>
 
                     <a href="https://www.apple.com/es/app-store/" target="blank" class="main__link">
-                        <img src="images/apple.svg" class="main__icon">
+                        <img src="images/apple.svg" alt="icono apple" class="main__icon">
                     </a>
 
                     <a href="https://es-es.facebook.com/" target="blank" class="main__link">
-                        <img src="images/facebook.svg" class="main__icon">
+                        <img src="images/facebook.svg" alt="icono facebook" class="main__icon">
                     </a>
 
                 </article>
@@ -94,11 +126,11 @@
 
         </section>
 
-        <footer>
-            <hr class="featurette-divider">
-            <p id="contacto" class="float-end">Maser Company, 2023</p>
-        </footer>
     </main>
+    <footer>
+        <hr class="featurette-divider">
+        <p id="contacto" class="float-end">Maser Company, 2023</p>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

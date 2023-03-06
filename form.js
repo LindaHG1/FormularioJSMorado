@@ -3,7 +3,9 @@ const NAME = document.getElementById('nombre')
 const EMAIL = document.getElementById('email')
 const USER = document.getElementById('usuario')
 const PASS = document.getElementById('contraseña')
+const PASS2 = document.getElementById('confirma-contraseña')
 const PARRAFO = document.getElementById('warnings')
+const PARRAFO2 = document.getElementById('enviado')
 const SENDBUTTON = document.getElementById('sendbtn')
 
 FORM.addEventListener('submit', e=>{
@@ -29,26 +31,10 @@ FORM.addEventListener('submit', e=>{
     }
     if(entrar){
         PARRAFO.innerHTML = warnings   
+    }else{
+        PARRAFO2.innerHTML = enviado 
+        enviado += `Enviado Correctamente`
     }
 })
-
-// else{
-//     PARRAFO.innerHTML = `Enviado Correctamente`
-//     removeClass(warnings)
-//     addClass(enviado)
-// }
-// campo de nombre solo con letras
-
-//campo de apellidos solo letras
-
-//campo usuario
-
-//campo contraseña
-
-//campo DNI
-
-//boton enviar
-
-
 
 
